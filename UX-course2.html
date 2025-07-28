@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebulae | Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+
+  </head>
+
+</head>
+<style>
+  ul.custom-bullets {
+    list-style-type: none; 
+    padding-left: 20px; 
+  }
+
+ul.custom-bullets li {
+    position: relative;
+    padding-left: 25px; 
+  }
+
+ul.custom-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: black; 
+  }
+
+ul.custom-bullets1 {
+    list-style-type: none; 
+    padding-left: 20px;
+  }
+
+ul.custom-bullets1 li {
+  position: relative;
+    padding-left: 30px; 
+  }
+
+
+ul.custom-bullets1 li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('./assets/media/UI_UX Course/bulletpoint.svg'); 
+    background-size: 12px 12px; 
+    background-repeat: no-repeat;
+    width: 12px; 
+    height: 12px; 
+  }
+
+
+
+.tabc {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  display: inline-block;
+  text-align: center;
+}
+
+.tabc.active {
+  background-color: #5956e9;
+  color: #fff;
+  font-weight: bold;
+}
+  
+
+/* sidebars */
+
+.aside-1{
+  width: 50%;
+}
+.aside-2{
+  width: 50%;
+}
+
+
+@media (max-width:768px) {
+  .aside-1{
+    width: 100%;
+  }
+  .aside-2{
+    width: 100%;
+  }
+}
+
+
+
+.swiper {
+  width: 100%;
+}
+
+.inactive{
+  /* background-color: #f2f8fc !important; */
+  color: #414042 !important;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+
+.active{
+  /* background-color: #eceaf9 !important; */
+  color: #414042 !important;
+  font-size: 14px !important;
+}
+
+.tabContent{
+  background-color: transparent !important;
+}
+
+
+
+@media (max-width:400px) {
+  .inactive{
+    background-color: #f2f8fc !important;
+    color: #414042 !important;
+    font-size: 11px !important;
+    font-weight: 500;
+  }
+  .active{
+    background-color: #eceaf9 !important;
+    color: #414042 !important;
+    font-size: 11px !important;
+    font-weight: 500;
+  }
+  .tabContent{
+    background-color: transparent !important;
+  }
+ 
+}
+.font{
+  color: #0720FF;
+}
+</style>
+
+<body class="sticky-header">
+   <!--=====================================-->
+        <!--=        Header Area Start       	=-->
+        <!--=====================================-->
+    <div id="main-wrapper" class="main-wrapper">
+        <header class="header axil-header header-style-1">
+          <div id="axil-sticky-placeholder"></div>
+          <div class="axil-mainmenu">
+              <div class="container">
+                  <div class="header-navbar">
+                      <div class="header-logo">
+                          <a href="index.html"><img class="light-version-logo" src="assets/media/logo.png" alt="logo"></a>
+                          <a href="index.html"><img class="dark-version-logo" src="assets/media/logo-3.png" alt="logo"></a>
+                          <a href="index.html"><img class="sticky-logo" src="assets/media/logo-2.png" alt="logo"></a>
+                      </div>
+                      <div class="header-main-nav">
+                          <!-- Start Mainmanu Nav -->
+                          <nav class="mainmenu-nav" id="mobilemenu-popup">
+                              <div class="d-block d-lg-none">
+                                  <div class="mobile-nav-header">
+                                      <div class="mobile-nav-logo">
+                                          <a href="index.html">
+                                              <img class="light-mode" src="assets/media/logo-2.png" alt="Site Logo">
+                                              <img class="dark-mode" src="assets/media/logo-3.png" alt="Site Logo">
+                                          </a>
+                                      </div>
+                                      <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                                  </div>
+                              </div>
+                              <ul class="mainmenu">
+                                  <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                                  <li><a class="text-decoration-none" href="service.html">Services</a></li>
+                                  <li><a class="text-decoration-none" href="">Course</a></li>
+                                  <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                                  <li><a class="text-decoration-none" href="about-us.html">About</a></li>                                    
+                                  <!-- <li><a href="blog.html">Blog</a></li> -->
+                                  <li><a class="text-decoration-none" href="contact.html">Contact</a></li>
+                              </ul>
+                          </nav>
+                          <!-- End Mainmanu Nav -->
+                      </div>
+                      <div class="header-action">
+                          <ul class="list-unstyled">
+                              <li class="sidemenu-btn d-lg-block d-none">
+                                  <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                  </button>
+                              </li>
+                              <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
+                                  <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                  </button>
+                              </li>
+                              <!-- <li class="my_switcher d-block d-lg-none">
+                                  <ul>
+                                      <li title="Light Mode">
+                                          <a href="javascript:void(0)" class="setColor light" data-theme="light">
+                                              <i class="fal fa-lightbulb-on"></i>
+                                          </a>
+                                      </li>
+                                      <li title="Dark Mode">
+                                          <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
+                                              <i class="fas fa-moon"></i>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li> -->
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+    </div>
+
+    
+    <!-- main section -->
+    <main class="mx-3 mx-lg-5 mt-2">
+
+        <!-- UX/UI Live Bootcamp course -->
+        <div class="">
+            <h1 class="fw-bold fs-2">UX/UI Live Bootcamp Course</h1>
+            <p class="fs-4">Master UX/UI Design from Beginner to Pro: 30 Live Classes, Real-World Projects & Freelancing Success
+            </p>
+        </div>
+        
+    <!-- svg box/banner -->
+    <img src="assets/media/UI_UX Course/ui_ux-course banner1.jpg" class="w-100"/>
+    
+
+    <!-- details section -->
+    <section class="d-flex flex-column flex-md-row gap-md-4 mt-5" style="gap:100px">
+    
+      
+    <!-- Left sidebar -->
+    <aside class="aside-1 d-flex flex-column gap-3">
+        
+        <!-- course module details -->
+        <div class="p-4 py-5 border border-black">
+            <h2 class="fs-3 fw-semibold">This Course Offers</h2>
+            <ul class="mt-3 custom-bullets">
+                <li>Modules: 6 Major Modules & 30 Live Classes</li>
+                <li>Basic to advanced level</li>
+                <li>Quiz & Assignment</li>
+                <li>Project-Based Learning: 6 Industry-Level Case Studies</li>
+                <li>Professional Certificate</li>
+                <li>Fiverr Freelancing Support</li>
+                <li>Mentor Support for one year</li>
+                <li>Additional Classes for Revision</li>
+            </ul>
+        </div>
+        
+
+        <!-- course module price -->
+        <div class="border border-black p-4 ">
+            <div class="d-flex gap-2">
+              <h5 class="">Course Price </h5>
+              <h5 class="fw-bold">$28</h5>
+              <h5 class="text-decoration-line-through ms-1" style="color: #626263;">$50</h5> 
+              <h5 style="text-decoration: none; font-weight: bold;">44% off</h5>
+            </div>
+            <button type="button" class="btn mt-3 text-white fw-bold w-100 py-3 text-uppercase" style="background-color: #5956e9;"><a style="text-decoration: none; color: white;" href="https://forms.gle/TLxCS8RGoLZvJx2C7">Enroll Now</a></button>
+        </div>
+        
+
+        <!-- Admission day left -->
+        <div class="border border-black p-4 ">
+            <h4 class="fw-bolder">Admission Open:</h4>
+            <div class="d-flex gap-1 text-center justify-content-evenly">
+               <div>
+                  <p class="fs-2 fw-bold text-black" id="days">00</p>
+                  <span class="fs-3 fw-bolder" style="color: #2d2d2e;">Days</span>
+               </div>
+                <h3>:</h3>
+               <div>
+                  <p class="fs-2 fw-bold text-black" id="hours">00</p>
+                  <span class="fs-3 fw-bolder" style="color: #414042;">Hr</span>
+               </div>
+                <h3>:</h3> 
+               <div>
+                  <p class="fs-2 fw-bold text-black" id="minutes">00</p>
+                  <span class="fs-3 fw-bolder" style="color: #414042;">Min</span>
+               </div>
+                <h3>:</h3>
+               <div>
+                  <p class="fs-2 fw-bold text-black" id="seconds">00</p>
+                  <span class="fs-3 fw-bolder" style="color: #414042;">Sec</span>
+               </div>
+            </div>
+        </div>
+
+
+        <!-- Admission enrollment deadline and course starting data -->
+        <div class="border border-black p-4 d-flex justify-content-center gap-2 ">
+            <div class="w-50 text-center gap-3 border-end border-black ">
+                <h6 class="fw-semibold">Admission Deadline</h6>
+                <h6 class="mt-3 fw-semibold">Dec 25, 2024</h6>
+            </div>
+            <div class="w-50 text-center ">
+                <h6 class="fw-semibold">Course Start</h6>
+                <h6 class="mt-3 fw-semibold">Jan 1, 2025</h6>
+            </div>
+        </div>
+        
+
+        <!-- For whom the course for section -->
+        <div class="">
+            <h2 class="fs-5 fw-bold">The Course Is Designed For</h2>
+                        <div class="border border-black px-2 py-4 mt-4">
+                            <ul  class="m-0 custom-bullets1">
+                                <li class="fw-bold">Young Professional keen to pursue career in software UX/UI, 
+                                    UI Designer, User Experience Designer and Product Designer</li>
+                                <li class="mt-4 fw-bold">University level student (from any background)</li>
+                            </ul>
+                        </div>
+      </div>
+
+      <!-- Required things you need to know section -->
+      <div class="mt-4">
+                <h2 class="fs-5 fw-bold">Key Features Of The Course</h2>
+                <div class="border border-black p-4 mt-4">
+                    <ul  class="m-0 custom-bullets1">
+                        <li class="fw-bold">Career Support</li>
+                        <li class="mt-3 fw-bold">Professional Certificate</li>
+                        <li class="mt-3 fw-bold">2 Years of Content Access</li>
+                        <li class="mt-3 fw-bold">Content created by industry experts</li> 
+                    </ul>
+                </div>
+      </div>
+
+            <!-- Required things you need to know section 2 -->
+      <div class="mt-4">
+          <h2 class="fs-5 fw-bold">Prerequisites For The Course</h2>
+          <div class="border border-black p-4 mt-4 ">
+              <ul  class="m-0 custom-bullets1">
+                  <li class="mt-4 fw-bold">Basic Ideas of Software and Digital Products</li>
+                  <li class="mt-4 fw-bold">Basic Use of Computer</li>
+                  <li class="mt-4 fw-bold">Basic Use of the Internet</li>
+                  <li class="mt-4 fw-bold">Basic Use of Google Classroom and Google Meet</li>
+              </ul>
+          </div>
+      </div>
+
+        <!-- Instructor Overview -->
+      <section class="d-flex flex-column mt-4 align-items-center w-100">
+
+        <!-- heading -->
+          <h1 class="fw-bold fs-5 text-center">Instructor Overview</h1>
+
+
+          <!-- Smartphone Previous Design that takes spaces over the screen -->
+          <!-- Smartphone Previous Design that takes spaces over the screen -->
+
+          <!-- to use it uncomment from here -->
+
+          <div style="width:100%;max-width: 370px; height:200vh;border-radius: 50px; max-height:850px;border: 6px #565553 solid; padding-block: 4px; padding-inline:2px;background-color: #f2f8fc;" class="mt-2 px-1">
+
+
+            <div style="border-radius: 40px; box-sizing: border-box; border: 6px black solid;" class="w-100 h-100 position-relative d-flex flex-column ">
+
+
+
+              <section class="d-flex w-100 justify-content-between align-items-center position-absolute" style="top:20px; padding-inline:20px; padding-left: 30px;">
+                <h1 class="fw-bold m-0" style="font-size: 13px;">09:41</h1>
+                <div class="d-flex gap-2" style="width: max-content;font-size:13px">
+                  <div class="d-flex align-items-center gap-2" style="font-size: 13px;">
+                    <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i style="font-size: 15px;" class="fa-solid fa-battery-full"></i>
+                  </div>
+
+
+              </section>
+                <section class="d-flex w-full align-items-center gap-5 justify-content-center mt-3">
+                  <div class="bg-dark d-flex align-items-center  justify-content-end" style="width: 100px; height:32px;border-radius:15px;">
+                    <img src="assets/media/UI_UX Course/lens.png" style="width:15px; height:15px" class="me-3"/>
+                  </div>
+                </section>
+
+                
+
+               <section class="w-100 d-flex mt-4 mt-md-5 justify-content-between align-items-center mx-auto" style="padding-inline: 35px;">
+               <img src="assets/media/UI_UX Course/less-than.png" style="width: 12px;"/>
+                <h1 class="m-0 fw-bold" style="font-size: 14px; color: #414042;">Mentor Profile</h1>
+                <img src="assets/media/UI_UX Course/love.png" style="width: 20px;"/>
+               </section>
+
+               <section style="margin-inline: 15px; border-radius:20px; margin-top:55px" class="bg-white d-flex flex-column align-items-center px-3 pb-3">
+
+
+
+                  <section class="w-100 d-flex justify-content-between align-items-center position-relative" style="height: max-content;">
+                    <div>
+                      <div style="background: #f2f8fc; border-radius:8px" class="d-flex align-items-center gap-1 px-2 py-2">
+                        <img src="assets/media/UI_UX Course/education.png" style="width:20px"/>
+                        <h3 style="font-size: 12px;" class="fw-bold m-0">150</h3>
+                      </div>
+                      <h3 class="m-0 text-center mt-1" style="font-size:12px">Students</h3>
+                    </div>
+                    <img src="assets/media/UI_UX Course/profile.jpg" class="" style="width: 100px; height:100px;object-fit: cover; background-color: #eceaf9; padding:5px; border-radius: 18px; margin-top: -30px;" class="position-absolute"/>
+                    <div>
+                      <div style="background: #f2f8fc; border-radius:8px" class="d-flex align-items-center gap-1 px-2 py-2">
+                        <img src="assets/media/UI_UX Course/dollar-bill.png" style="width:20px"/>
+                        <h3 style="font-size: 12px;" class="fw-bold m-0">$28</h3>
+                      </div>
+                      <h3 class="m-0 text-center mt-1" style="font-size:12px">Course</h3>
+                    </div>
+                  </section>
+
+                 
+                  <section>
+                    <div class="mt-3">
+                      <h1 class="text-center fw-bold d-flex justify-content-center gap-1 ms-3" style="font-size: 16px">Yasin Ahmed 
+                        <img src="assets/media/UI_UX Course/checklist.png" style="width: 15px;height: 15px; margin-top:3px" class=""/>
+                      </h1>
+                    </div>
+                    <h1 class="text-center fw-bold" style="font-size: 12px; color: #414042;">Lead User Experience Designer</h1>
+                  </section>
+
+
+
+                  <section class="d-flex w-100 gap-3 align-items-center justify-content-between  mt-2">
+                    <!--Fiverr Link-->
+                    <a href="https://www.fiverr.com/artpro_ya?up_rollout=true">
+                    <div class="py-2 px-2 rounded-2" style="background: #f2f8fc; color:black;">
+                      <img src="assets/media/UI_UX Course/fiverr.svg" style="width: 22px;height:22px"/>
+                    </div>
+                  </a>
+                  <!--Linkedln Link-->
+                  <a href="https://www.linkedin.com/in/yasinahmeduxui/">
+                    <div class="pt-2 pb-1 px-2 rounded-2" style="background: #f2f8fc; color:black;">
+                      <i class="fa-brands fa-linkedin-in fs-4 m-0 p-0"></i>
+                    </div>
+                  </a>
+                  <!--Behance Link-->
+                  <a href="https://www.behance.net/uxuiresearcher">
+                    <div class="pt-2 pb-1 px-2 rounded-2" style="background: #f2f8fc; color:black;">
+                      <i class="fa-brands fa-behance fs-4 m-0 p-0"></i>
+                    </div>
+                  </a>
+                    <!--Dribble Link-->
+                    <a href="https://dribbble.com/yasinahmed496">
+                    <div class="rounded-2" style="background: #f2f8fc; padding-inline:10px;padding-block: 8px; color:black;">
+                      <img  src="assets/media/UI_UX Course/dribble.png" style="width: 23px;height:23px"/>
+                    </div>
+                    </a>
+                      <!--Youtube Link-->
+                  <a href="https://www.youtube.com/@artproya">
+                    <div class="pt-2 pb-1 px-2 rounded-2" style="background: #f2f8fc; color:black;">
+                    <i class="fa-brands fa-youtube fs-4 m-0 p-0"></i>
+                  </div>
+                  </a>
+                  </section>
+                    
+                <!--social media over-->
+
+                  <section class="w-100 mt-3">
+                    <ul class="nav nav-pills w-100 align-items-center justify-content-between gap-1">
+                      <li class='nav-item tabClass'>
+                        <a class='nav-link inactive  ' data-toggle='tab' href='#A1'>About me</a>
+                      </li>
+                      <li class='nav-item tabClass'>
+                        <a class='nav-link inactive' href='#A2'>Content</a>
+                      </li>
+                      <li class='nav-item tabClass'>
+                        <a class='nav-link inactive' href='https://www.fiverr.com/artpro_ya'>Reviews</a>
+                      </li>
+                    </ul>
+                  
+   
+                    <div class="tab-content mt-3">
+                      <div class='tab-pane container fade in show active tabContent px-2' style="font-size: 12px !important; font-weight:500" id='A1'>As Lead UX Designer at Nebulae, I create user-centered designs from research through prototyping, collaborating closely with cross-functional teams. I also teach UX/UI at Nebulae and GP Academy, guiding students in design fundamentals and portfolio development. With over six years of freelance experience, I bring adaptable, innovative solutions tailored to each client's needs.</div>
+                      <div class='tab-pane container fade tabContent px-2' style="font-size: 12px !important; font-weight:500"  id='A2'>2</div>
+                      <div class='tab-pane container fade tabContent px-2' style="font-size: 12px !important; font-weight:500"  id='A3'>3</div>
+                    </div>
+                  </section>
+
+
+
+                  <section class="d-flex flex-column align-items-start w-100 gap-3 mt-3">
+                    <a class="w-100" href="#">
+                      <div class="btn w-full p-0 fw-bold w-100 text-start d-flex justify-content-between" style="font-size: 13px; background-color: #f2f8fc; padding: 10px !important; color: #414042;">Career roadmap and advice
+                        <img src="assets/media/UI_UX Course/less-than.png" style="width: 12px; rotate: -180deg;">
+                      </div>
+                    </a>
+                    <a class="w-100" href="#">
+                      <div class="btn w-full p-0 fw-bold w-100 text-start d-flex justify-content-between" style="font-size: 13px; background-color: #f2f8fc; padding: 10px !important; color: #414042;">Message
+                        <img src="assets/media/UI_UX Course/less-than.png" style="width: 12px; rotate: -180deg;"/></div>
+                    </a>
+                    <a class="w-100" href="https://forms.gle/TLxCS8RGoLZvJx2C7">
+                      <div class="btn w-full p-0 fw-bold w-100 text-center text-white" style="font-size: 13px;   background: linear-gradient(to right, #5753e7, #361253); padding: 10px !important; ">Enroll Now</div>
+                    </a>
+                  </section>
+               </section>
+
+
+               <section class="rounded-pill mx-auto position-absolute border-1" style="bottom: 10px; left: 50%; transform: translateX(-50%); background-color: black; padding: 2px; width: 35%;">
+                
+               </section>
+                  </div>
+                  </div> 
+                  <!-- previous smartphone design finishes here -->
+
+                  
+          <!-- border 1 -->
+         
+                </section>
+                </aside>
+
+
+              
+
+
+
+                
+        <!-- right sidebar -->
+        <aside class="aside-2">
+
+            <!-- buttons -->
+              
+            <div class="d-flex gap-2 tabs">
+                <button style="background-color: #5956e9; font-size: 14px;" class="couu fw-bold w-100 text-white border-0 btn  fw-medium p-3 tabc active" data-section="section1">Course Details</button>
+                <button style="background-color: #e1f5fb; font-size: 14px;" class=" fw-bold w-100 text-black border-0 btn  fw-medium p-3 tabc" data-section="section2">Syllabus</button>
+                <button style="background-color: #d9d9d9; font-size: 14px;" class=" fw-bold w-100 text-black border-0 btn  fw-medium p-3 tabc" data-section="section3">Project</button>
+            </div>
+              
+
+
+            <!-- What you will learn section -->
+            <div class="mt-5 section" id="section1">
+              <h1 class="fs-4 fw-bold">What You Will Learn from This UX/UI Live Bootcamp Course?</h1>
+              <div class="border border-black p-5 mt-4 fs-5">
+                  <ol  class="m-0 ps-0 ">
+                    <li class="fw-medium">Introduction to UX/UI Design</li>
+                    <li class="mt-3 fw-medium">Understanding Users and Their Journey</li>
+                    <li class="mt-3 fw-medium">Competitive Analysis and Structuring Information</li>
+                    <li class="mt-3 fw-medium">Wireframing to Prototyping</li>
+                    <li class="mt-3 fw-medium">Design Elements and Style</li>
+                  </ol>
+                  
+              </div>
+            </div>
+                      
+                      
+            <div class="section" id="section2">
+              <!-- Course Complete Curriculum heading -->
+              <h2 class="my-5 fw-bold fs-4">Course Complete Curriculum</h2>
+                      
+                      
+              <!-- Classes dropdowns / accordions -->
+              <div class="accordion d-flex flex-column gap-3" id="accordionExample">
+
+                <!-- Class 1: Define the Project and Goals -->
+                <div class="accordion-item border-0">
+
+                  <!-- heading -->
+                  <h2 class="accordion-header">
+                    <button class="font accordion-button bg-white border border-black rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Class 1: Define the Project and Goals
+                    </button>
+                  </h2>
+
+                  <!-- contents -->
+                  <div id="collapseOne" class="accordion-collapse collapse show border border-black mt-3" data-bs-parent="#accordionExample">
+                    <div class="accordion p-4">
+                      <ol class="">
+                      <!--<li class="fs-6">Content:</li>--> 
+                        <li>Project Goals and Vision</li>
+                        <li>Initial Research Overview</li>
+                        <li>Problem Framing</li>
+                        <li>Industry-Level Case Study Discussion</li>
+                        <li>Class Evaluation and Problem Solving</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Class 2: User Research -->
+                <div class="accordion-item border-0">
+
+                  <!-- heading -->
+                  <h2 class="accordion-header">
+                    <button class="font accordion-button bg-white border border-black rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                      Class 2: User Research
+                    </button>
+                  </h2>
+                  
+                  <!-- contents -->
+                  <div id="collapseTwo" class="accordion-collapse collapse border border-black mt-3" data-bs-parent="#accordionExample">
+                    <div class="accordion p-4">
+                      <ol class="">
+                    <!--<li class="fs-6">Content:</li>--> 
+                        <li>Importance of User Research</li>
+                        <li>Types of User Research Methods</li>
+                        <li>User Personas and Empathy Mapping</li>
+                        <li>Conducting User Interviews</li>
+                        <li>Synthesizing Research Findings</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                  <!-- Class 3: Design and Ideation -->
+                  <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                      <button class="font accordion-button bg-white border border-black rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Class 3: Design and Ideation
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse border border-black mt-3" data-bs-parent="#accordionExample">
+                      <div class="accordion p-4">
+                        <ol class="">
+                          <!--<li class="fs-6">Content:</li>--> 
+                          <li>Brainstorming and Ideation Techniques</li>
+                          <li>Concept Development and Storyboarding</li>
+                          <li>Design Thinking Process</li>
+                          <li>Establishing Design Principles and Goals</li>
+                          <li>Creating a Design Plan and Roadmap</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Class 4: Develop and Refine Solutions -->
+                  <div class="accordion-item border-0">
+
+                    <!-- heading -->
+                    <h2 class="accordion-header">
+                      <button class="font accordion-button bg-white border border-black rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Class 4: Develop and Refine Solutions
+                      </button>
+                    </h2>
+
+                    <!-- contents -->
+                    <div id="collapseFour" class="accordion-collapse collapse border border-black mt-3" data-bs-parent="#accordionExample">
+                      <div class="accordion p-4">
+                        <ol class="">
+                          <!--<li class="fs-6">Content:</li>--> 
+                          <li>Iteration in the Design Process</li>
+                          <li>User-Centered Testing and Feedback</li>
+                          <li>Refinement Techniques</li>
+                          <li>Balancing Aesthetics and Functionality</li>
+                          <li>Documenting and Implementing Revisions</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Class 5: Understand User -->
+                  <div class="accordion-item border-0">
+
+                    <!-- heading -->
+                    <h2 class="accordion-header">
+                      <button class="font accordion-button bg-white border border-black rounded-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Class 5: Understand User
+                      </button>
+                    </h2>
+
+                    <!-- contents -->
+                    <div id="collapseFive" class="accordion-collapse collapse border border-black mt-3" data-bs-parent="#accordionExample">
+                      <div class="accordion p-4">
+                        <ol class="">
+                          <!--<li class="fs-6">Content:</li>--> 
+                          <li>Creating and Utilizing User Personas</li>
+                          <li>Identifying User Requirements</li>
+                          <li>Behavioral Patterns and Motivation Analysis</li>
+                          <li>Empathy Mapping for Deeper Insights</li>
+                          <li>Aligning Product Goals with User Needs</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div>
+                    <a href="./assets/syllabus/Nebulae_UXUI_Course.pdf" style="background-color: #5956e9; font-size: 14px" class="fw-bold text-white border-0 btn  fw-medium p-3 mt-4" download>VIEW THE ENTIRE SYLLABUS</a>
+                  </div>
+                  </div>
+                  
+              </div>
+            </div>
+
+
+            <div class="section" id="section3">
+              <!-- Project case study section -->
+              <div class="mt-5">
+                <div class="border border-black p-5 mt-4 f">
+                  
+                      <h1 class="fw-bold fs-4">Industry-Level Case Study Projects</h1>
+                      <p class="mt-3 fw-medium">Each project type below includes key focus areas and unique industry scenarios that could be used to create compelling, industry-relevant case studies. Here’s how each could be approached to cover critical UX/UI skills:</p>
+                      <ol  class="m-0 ps-0 "></ol>
+                      <li class="mt-3 fw-medium">Mobile App iOS UI Design</li>
+                      <li class="mt-3 fw-medium">SaaS Website Design</li>
+                      <li class="mt-3 fw-medium">Cross-Platform Design</li>
+                    </ol>
+                </div>
+              </div>
+                    
+              <!-- carousel slider section-->
+
+              <h2 class="my-5 fw-bold fs-4">Project Ideas</h2>
+
+              <!-- slider section -->
+              <div class="swiper w-100" style="height: 300px;">
+                <!-- carousel slides container -->
+                <div class="swiper-wrapper w-100 h-100 ">
+                            
+                      <!-- slide 1 -->
+                      <div class="swiper-slide position-relative h-100 photo">
+                              <img src="assets/media/UI_UX Course/projectBanner1.svg" class="d-block w-100 h-100" style="object-fit: cover;"  alt="...">
+                      </div>
+
+                      <!-- slide 2 -->
+                      <div class="swiper-slide photo">
+                              <img src="assets/media/UI_UX Course/projectBanner2.svg" style="object-fit: cover;" class="d-block w-100 h-100" alt="...">
+                      </div>
+                            
+                      <!-- slide 3 -->
+                      <div class="swiper-slide photo">
+                              <img src="assets/media/UI_UX Course/projectBanner3.svg" class="d-block w-100 h-100" style="object-fit: cover;" alt="...">
+                      </div>
+                </div>
+
+                        
+                  <!-- left button -->
+                  <button class="swiper-button-prev border-0 bg-transparent" >
+                  </button>
+
+                  <!-- right button -->
+                  <button class="swiper-button-next border-0 bg-transparent">
+                  </button>
+
+
+              </div>
+            </div>
+        </aside>
+      </section>
+
+
+
+    </main>
+        <div class="mt-5"></div>
+    <!--=====================================-->
+        <!--=        Footer Area Start       	=-->
+        <!--=====================================-->
+        <footer class="footer-area">
+          <div class="container">
+              <!-- <div class="footer-top">
+                  <div class="footer-social-link">
+                      <ul class="list-unstyled">
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li>
+                          <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
+                      </ul>
+                  </div>
+              </div> -->
+              <div class="footer-main">
+                  <div class="row">
+                      <div class="col-xl-6 col-lg-5" data-sal="slide" data-sal-duration="100" data-sal-delay="100">
+                          <div class="footer-widget border-end">
+                              <div class="footer-newsletter">
+                                  <h2 class="title">Get in touch!</h2>
+                                  <p>Our Team of expert designers and engineers will help you build powerful tools to drive impact and help you achieve your goals</p>
+                                  <div class="footer-social-link">
+                                      <ul class="list-unstyled">
+                                          <li><a href="https://www.facebook.com/nebulaesoft/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
+                                          <li><a href="https://x.com/NebulaeItsoft" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
+                                          <li><a href="https://www.pinterest.com/nebulaeitsoft/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a></li>
+                                          <li><a href="https://www.linkedin.com/company/nebulae03/posts/?feedView=all" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
+                                          <li><a href="https://www.instagram.com/uxui_research_nebulae/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
+                                          <!-- <li><a href="#" data-sal="slide-up" data-sal-duration="500" data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li> -->
+                                          <!-- <li><a href=" https://dribbble.com/uxuinebulaesolution" data-sal="slide-up" data-sal-duration="500" data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li> -->
+                                          <li><a href="https://www.behance.net/nebulaeuxuisolution" data-sal="slide-up" data-sal-duration="500" data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
+                                      </ul>
+                                  </div>
+                                  <!-- <form>
+                                      <div class="input-group">
+                                          <input type="email" class="form-control" placeholder="Email address">
+                                          <button class="subscribe-btn" type="submit">Email</button>
+                                      </div>
+                                  </form> -->
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-7" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <div class="footer-widget">
+                                      <h6 class="widget-title">Services</h6>
+                                      <div class="footer-menu-link">
+                                          <ul class="list-unstyledfooter">
+                                              <li><a href="#">UI/UX Design</a></li>
+                                              <li><a href="$">Website Development</a></li>
+                                              <li><a href="#">Api Development</a></li>
+                                              <li><a href="#">Logo &amp; Branding </a></li>
+                                              <li><a href="#">Software Development</a></li>
+                                              <li><a href="#">Online Marketing</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <div class="footer-widget">
+                                      <h6 class="widget-title">Resourses</h6>
+                                      <div class="footer-menu-link">
+                                          <ul class="list-unstyledfooter">
+                                              <!-- <li><a href="blog.html">Blog</a></li> -->
+                                              <li><a href="case-study.html">Case Studies</a></li>
+                                              <!-- <li><a href="project.html">Portfolio</a></li> -->
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <div class="footer-widget">
+                                      <h6 class="widget-title">Support</h6>
+                                      <div class="footer-menu-link">
+                                          <ul class="list-unstyledfooter">
+                                              <li><a href="contact.html">Contact</a></li>
+                                              <li><a href="#">Privacy Policy</a></li>
+                                              <li><a href="#">Terms of Use</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-bottom" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="footer-copyright">
+                              <span class="copyright-text">© 2024. All rights reserved by <a href="#">Nebulae</a>.</span>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="footer-bottom-link">
+                              <ul class="list-unstyled">
+                                  <li><a href="#">Privacy Policy</a></li>
+                                  <li><a href="#">Terms of Use</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+
+
+      <!--=====================================-->
+      <!--=       Offcanvas Menu Area       	=-->
+      <!--=====================================-->
+      <div class="offcanvas offcanvas-end header-offcanvasmenu" tabindex="-1" id="offcanvasMenuRight">
+          <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <!-- <form action="#" class="side-nav-search-form">
+                  <div class="form-group">
+                      <input type="text" class="search-field" name="search-field" placeholder="Search...">
+                      <button class="side-nav-search-btn"><i class="ri-search-line"></i></button>
+                  </div>
+              </form> -->
+              <div class="row ">
+                  <div class="col-lg-7 col-xl-6">
+                      <div class="contact-info-wrap">
+                          <div class="contact-inner">
+                              <address class="address">
+                                  <span class="title">Contact Information</span>
+                                  <p>New,<br>Bailey Road, Dhaka</p>
+                              </address>
+                              <address class="address">
+                                  <span class="title">We're Available 24/7. Call Now.</span>
+                                  <li class="tel" style="list-style: none;"><i class="fas fa-phone"></i> +8801712-581668</li>
+                                  <li class="tel" style="list-style: none;"><i class="fas fa-phone"></i> +8801704-632456</li>
+                              </address>
+                          </div>
+                          <div class="contact-inner">
+                              <h5 class="title">Contact with us</h5>
+                               <address class="address">
+
+                               </address>
+                                  <!-- <ul> -->
+                                      <li style="list-style: none; font-weight: 500;"><i class="ri-mail-line"></i> sales@nebulae-soft.com</li>
+                                      <li style="list-style: none; font-weight: 500;"><i class="ri-mail-line"></i> support@nebulae-soft.com</li>
+                                   <!-- </ul> -->
+                               
+                              <!-- <div class="contact-social-share">
+                                  <ul class="social-share list-unstyled">
+                                      <li><a href="https://www.facebook.com/profile.php?id=61557632140972"><i class="fab fa-facebook-f"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                      <li><a href="https://www.linkedin.com/company/nebulae03/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a></li>
+                                  </ul>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+     
+    <!-- Counter JS -->
+    <script>
+      var countDownDate = new Date("Dec 25, 2024 00:00:00").getTime();
+      var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if(distance < 0){
+          clearInterval(x);
+          document.getElementById("days").innerHTML = "00";
+          document.getElementById("hours").innerHTML = "00";
+          document.getElementById("minutes").innerHTML = "00";
+          document.getElementById("seconds").innerHTML = "00";
+        }
+      }, 1000)
+
+
+
+    //  tab code
+    document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tabc");
+    
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        // Remove active class from all tabs
+        tabs.forEach((t) => t.classList.remove("active"));
+
+        // Add active class to clicked tab
+        tab.classList.add("active");
+
+        // Scroll to the corresponding section
+        const targetSection = document.getElementById(tab.dataset.section);
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  });
+
+
+   </script>
+    
+    <!-- swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- app dot js -->
+    <script src="assets/js/JS.js"></script>
+
+    <!-- bootstrap js functionalities for accordions -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- tabs functionality for bootstrap -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/dc504fa211.js" crossorigin="anonymous"></script>
+
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/waypoints.min.js"></script>
+    <script src="assets/js/vendor/counterup.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/sal.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/tilt.js"></script>
+    <script src="assets/js/vendor/green-audio-player.min.js"></script>
+    <script src="assets/js/vendor/jquery.nav.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+
+    
+  </body>
+</body>
+</html>
